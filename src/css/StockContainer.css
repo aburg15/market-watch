@@ -27,3 +27,7 @@
   justify-content: space-evenly;
   width: 100%;
 }
+
+.stock-link {
+  text-decoration: none;
+}

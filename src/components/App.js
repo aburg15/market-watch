@@ -1,8 +1,9 @@
 import '../css/App.css';
+import { Routes, Route } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import Header from './Header';
 import StockContainer from './StockContainer';
-import SelectedStock from './SelectedStock';
+import SelectedPage from './SelectedPage';
 
 
 
@@ -19,7 +20,10 @@ const App = () => {
   return (
     <div className="app">
       <Header />
-      <StockContainer stocks={stocks} />
+      <Routes>
+        <Route path="/" element={<StockContainer stocks={stocks} />} />
+        <Route path="/:stockId" element={<SelectedPage />} />
+      </Routes>
     </div>
   );
 }
