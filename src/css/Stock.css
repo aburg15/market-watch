@@ -1,0 +1,26 @@
+.stock {
+  display: flex;
+  align-items: center;
+  border: 2px solid green;
+  width: 80%;
+}
+
+.stock-img {
+  display: flex;
+  justify-content: center;
+  width: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.stock-details {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.stock-title, p {
+  display: flex;
+  width: 200px;
+  align-items: center;
+}
