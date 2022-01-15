@@ -22,7 +22,7 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/" element={<StockContainer stocks={stocks} />} />
-        <Route path="/:stockId" element={<SelectedPage />} />
+        <Route path="/:stockId" element={<SelectedPage stocks={stocks} />} />
       </Routes>
     </div>
   );

@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 const StockContainer = ({ stocks }) => {
   const stockCards = stocks.map((stock, index) => {
+    console.log(stocks[0].image)
     return (
       <Link to={'/' + stock.id} key={index} className='stock-link'>
         <Stock 

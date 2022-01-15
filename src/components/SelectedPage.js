@@ -4,11 +4,9 @@ import SelectedStock from './SelectedStock';
 import { useParams } from 'react-router';
 
 
-const SelectedPage = () => {
+const SelectedPage = ({ stocks }) => {
   const id = useParams().stockId;
-  console.log(id)
-
-  return <SelectedStock id={id} />
+  return <SelectedStock id={id} stocks={stocks} />
 }
 
 export default SelectedPage;
