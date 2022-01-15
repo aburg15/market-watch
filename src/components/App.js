@@ -8,7 +8,7 @@ import SelectedStock from './SelectedStock';
 
 const App = () => {
 
-  const [stocks, setStocks] = useState(null);
+  const [stocks, setStocks] = useState([]);
 
   useEffect(() => {
     return fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false')
@@ -16,10 +16,11 @@ const App = () => {
       .then(data => setStocks(data))
   }, [])
 
-  console.log(stocks)
+
 
   return (
     <div className="app">
+      <Nav />
       
     </div>
   );
