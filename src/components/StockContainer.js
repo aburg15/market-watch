@@ -19,6 +19,15 @@ const StockContainer = ({ stocks }) => {
   })
   return (
     <div className="stock-container">
+      <section className="stock-container-label">
+        <img className="stock-img-label" src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png?154703357" /> 
+        <div className='stock-label-details'>
+          <p>STOCK</p>
+          <p>CURRENT PRICE</p>
+          <p>24 HR % CHANGE</p>
+          <p>MARKET CAP</p>
+        </div>
+      </section>
       {stockCards}
     </div>
   );
