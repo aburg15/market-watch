@@ -1,0 +1,19 @@
+header {
+  background-color: gray;
+  color: white;
+  width: 100vw;
+  min-height: 18vh;
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  border: 2px solid green;
+}
+
+.logo {
+  height: 100px;
+  margin-right: 2em;
+}
+
+h1 {
+  font-size: 3em;
+}

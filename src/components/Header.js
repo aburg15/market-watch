@@ -1,10 +1,13 @@
 import '../css/Header.css';
+import SearchForm from './SearchForm';
+import logo from '../assets/logo.png'
 
 const Header = () => {
   return (
-    <div className="header">
-      
-    </div>
+    <header className="header">
+      <img className='logo' src={logo} alt='logo' />
+      <h1>MARKET WATCH</h1>
+    </header>
   );
 }
 

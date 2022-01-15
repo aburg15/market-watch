@@ -1,6 +1,6 @@
 import '../css/App.css';
 import { useState, useEffect } from 'react';
-import Nav from './Nav';
+import Header from './Header';
 import StockContainer from './StockContainer';
 import SelectedStock from './SelectedStock';
 
@@ -16,11 +16,9 @@ const App = () => {
       .then(data => setStocks(data))
   }, [])
 
-
-
   return (
     <div className="app">
-      <Nav />
+      <Header />
       
     </div>
   );
