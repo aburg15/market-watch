@@ -1,0 +1,9 @@
+.search-form {
+  border: 2px solid green;
+  display: flex;
+  width: 20%
+}
+
+.search-bar {
+  width: 100%;
+}

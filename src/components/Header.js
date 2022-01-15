@@ -7,6 +7,7 @@ const Header = () => {
     <header className="header">
       <img className='logo' src={logo} alt='logo' />
       <h1>MARKET WATCH</h1>
+      <SearchForm />
     </header>
   );
 }
