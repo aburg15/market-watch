@@ -1,0 +1,29 @@
+.stock-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.stock-container-label {
+  display: flex;
+  border-bottom: 2px solid lightgray;
+  width: 80%;
+  height: 50px; 
+  justify-content: space-evenly;
+}
+
+.stock-img-label {
+  display: flex;
+  justify-content: center;
+  width: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  visibility: hidden;
+}
+
+.stock-label-details {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
