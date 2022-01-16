@@ -1,12 +1,17 @@
 .selected-stock {
   display: flex;
-  border: 2px solid green;
   justify-content: space-around;
   align-items: center;
+  margin-top: 5%;
 }
 
 .selected-stock-details {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  text-align: left;
+  width: 40%;
+}
+
+.selected-stock-img {
+  width: 300px;
 }

@@ -28,7 +28,7 @@ const SelectedStock = ({ stocks, id }) => {
           <img className="selected-stock-img" src={selectedStockImg.large} />
         </div>
         <div className='selected-stock-details'>
-          <h2>Name: {selectedStock.name}</h2>
+          <h2>{selectedStock.name}</h2>
           <div dangerouslySetInnerHTML={{__html: selectedStockDescription.en}} />
         </div>
       </main>
