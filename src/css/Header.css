@@ -13,7 +13,11 @@ header {
 
 h1 {
   font-size: 3em;
-  color: #14213d
+  color: #14213d;
+}
+
+.header-link {
+  text-decoration: none;
 }
 
 .logo {
