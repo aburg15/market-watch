@@ -9,9 +9,22 @@
   display: flex;
   flex-direction: column;
   text-align: left;
-  width: 40%;
+  width: 60%;
 }
 
 .selected-stock-img {
   width: 300px;
+}
+
+.return-button {
+  color: black;
+  background-color: orange;
+  border-radius: 2px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  margin-top: 15px;
+  padding: 4px 10px;
+  font-weight: bold;
 }

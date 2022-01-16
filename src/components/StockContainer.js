@@ -32,7 +32,7 @@ const StockContainer = ({ stocks, filteredStocks, formInput }) => {
           percent_change={stock.price_change_percentage_24h}
           total_supply={stock.total_supply}
           key={index}
-        />
+          />
       </Link>
     )
   })

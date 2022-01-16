@@ -1,6 +1,7 @@
 import '../css/Header.css';
 import SearchForm from './SearchForm';
-import logo from '../assets/logo.png'
+import logo from '../assets/logo.png';
+import { useLocation } from 'react-router-dom';
 
 const Header = ({ filterStocks }) => {
   return (
@@ -8,7 +9,7 @@ const Header = ({ filterStocks }) => {
       <img className='logo' src={logo} alt='logo' />
       <div className="search-container">
         <h1>MARKET WATCH</h1>
-        <SearchForm filterStocks={filterStocks} />
+        {useLocation().pathname === '/' && <SearchForm filterStocks={filterStocks} />}
       </div>
     </header>
   );

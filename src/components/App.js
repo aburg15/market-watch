@@ -31,6 +31,10 @@ const App = () => {
     setFormInput(formInput)
   }
 
+  const searchBarDisplay = () => {
+    return 'hi'
+  }
+
   return (
     <div className="app">
       <Header filterStocks={filterStocks}/>
