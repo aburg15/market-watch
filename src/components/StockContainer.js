@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const StockContainer = ({ stocks }) => {
   const stockCards = stocks.map((stock, index) => {
     return (
-      // <Link to={'/' + stock.id} key={index} className='stock-link'>
+      <Link to={'/' + stock.id} key={index} className='stock-link'>
         <Stock 
           id={stock.id}
           name={stock.name}
@@ -16,7 +16,7 @@ const StockContainer = ({ stocks }) => {
           total_supply={stock.total_supply}
           key={index}
         />
-      // </Link>
+      </Link>
     )
   })
   return (
