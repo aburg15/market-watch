@@ -4,9 +4,8 @@ import { Link } from 'react-router-dom';
 
 const StockContainer = ({ stocks }) => {
   const stockCards = stocks.map((stock, index) => {
-    console.log(stocks[0].image)
     return (
-      <Link to={'/' + stock.id} key={index} className='stock-link'>
+      // <Link to={'/' + stock.id} key={index} className='stock-link'>
         <Stock 
           id={stock.id}
           name={stock.name}
@@ -14,10 +13,10 @@ const StockContainer = ({ stocks }) => {
           price={stock.current_price}
           market_cap={stock.market_cap}
           percent_change={stock.price_change_percentage_24h}
+          total_supply={stock.total_supply}
           key={index}
         />
-      </Link>
-
+      // </Link>
     )
   })
   return (

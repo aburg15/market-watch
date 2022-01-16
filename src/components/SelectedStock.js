@@ -1,25 +1,42 @@
-import '../css/SelectedStock.css';
-import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+// import '../css/SelectedStock.css';
+// import React, { Component } from 'react';
+// import { useState, useEffect } from 'react';
+// import { Link } from 'react-router-dom';
 
-const SelectedStock = ({ id, stocks }) => {
-  const [stockInfo, setStockInfo] = useState({});  
+// const SelectedStock = ({ id }) => {
+//   const [stockInfo, setStockInfo] = useState([]);
+//   const [selectedStock, setSelectedStock] = useState({})
 
-  useEffect(() => {
-    const stockDetails = stocks.find((stock) => {
-      return stock.id === id
-    })
-    setStockInfo(stockDetails)
-  })
+  
+//   const fetchStocks = async () => {
+//     try {
+//       const stockData = await fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=30&page=1&sparkline=false')
+//       const data = await stockData.json()
+//       setStockInfo(data)
+//     } catch (err) {
+//       console.log(err)
+//     }
+//   }
+  
+  
+//   useEffect(() => {
+//     fetchStocks()
+//   }, [])
 
-  return (
-    <section>
-      <main className="selected-stock">
-        <img className="stock-card-img" src={stockInfo.image}/>
-        <h2>{stockInfo.name}</h2>
-      </main>
-    </section>
-  );
-}
+//   return (
+//     <section className="selected-stock-wrapper">
+//       <main className="selected-stock">
+//         <div>
+//           <img src={selectedStock.image} />
+//         </div>
+//         <div className='selected-stock-details'>
+//           <h2>Name: {stockInfo.name}</h2>
+//           <p>Symbol: {stockInfo.symbol}</p>
+//           <p>Total Supply: {stockInfo.total_supply}</p>
+//         </div>
+//       </main>
+//     </section>
+//   );
+// }
 
-export default SelectedStock;
+// export default SelectedStock;

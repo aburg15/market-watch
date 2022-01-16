@@ -5,8 +5,6 @@ import Header from './Header';
 import StockContainer from './StockContainer';
 import SelectedPage from './SelectedPage';
 
-
-
 const App = () => {
 
   const [stocks, setStocks] = useState([]);

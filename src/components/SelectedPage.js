@@ -1,6 +1,6 @@
 import '../css/SelectedPage.css';
 import SelectedStock from './SelectedStock';
-// import { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams } from 'react-router';
 
 

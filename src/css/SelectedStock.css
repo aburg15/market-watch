@@ -1,6 +1,11 @@
+/* .selected-stock-wrapper {
+  display: flex;
+  flex-direction: row;
+} */
+
 .selected-stock {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  border: 2px solid green;
+  justify-content: space-around;
   align-items: center;
 }
