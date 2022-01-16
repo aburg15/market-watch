@@ -8,6 +8,7 @@ import SelectedPage from './SelectedPage';
 const App = () => {
 
   const [stocks, setStocks] = useState([]);
+  const [filteredStocks, setFilteredStocks] = useState([]);
 
   const fetchStocks = async () => {
     try {
@@ -23,11 +24,16 @@ const App = () => {
     fetchStocks()
   }, [])
 
+  const filterStocks = (e) => {
+    const filteredStocks = stocks.filter(stock => stock.name.toLowerCase().includes(e.toLowerCase()))
+    setFilteredStocks(filteredStocks)
+  }
+
   return (
     <div className="app">
-      <Header />
+      <Header filterStocks={filterStocks}/>
       <Routes>
-        <Route path="/" element={<StockContainer stocks={stocks} />} />
+        <Route path="/" element={<StockContainer stocks={stocks} filteredStocks={filteredStocks} />} />
         <Route path="/:stockId" element={<SelectedPage stocks={stocks} />} />
       </Routes>
     </div>

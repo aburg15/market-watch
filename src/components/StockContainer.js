@@ -2,7 +2,7 @@ import '../css/StockContainer.css';
 import Stock from './Stock';
 import { Link } from 'react-router-dom';
 
-const StockContainer = ({ stocks }) => {
+const StockContainer = ({ stocks, filteredStocks }) => {
   const stockCards = stocks.map((stock, index) => {
     return (
       <Link to={'/' + stock.id} key={index} className='stock-link'>
@@ -19,6 +19,24 @@ const StockContainer = ({ stocks }) => {
       </Link>
     )
   })
+
+  const filteredStockCards = filteredStocks.map((stock, index) => {
+    return (
+      <Link to={'/' + stock.id} key={index} className='stock-link'>
+        <Stock 
+          id={stock.id}
+          name={stock.name}
+          image={stock.image}
+          price={stock.current_price}
+          market_cap={stock.market_cap}
+          percent_change={stock.price_change_percentage_24h}
+          total_supply={stock.total_supply}
+          key={index}
+        />
+      </Link>
+    )
+  })
+
   return (
     <div className="stock-container">
       <section className="stock-container-label">
@@ -30,7 +48,7 @@ const StockContainer = ({ stocks }) => {
           <p>MARKET CAP</p>
         </div>
       </section>
-      {stockCards}
+      {filteredStocks.length ? filteredStockCards : filteredStocks}
     </div>
   );
 }
