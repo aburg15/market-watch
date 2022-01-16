@@ -8,6 +8,8 @@ import SelectedPage from './SelectedPage';
 const App = () => {
 
   const [stocks, setStocks] = useState([]);
+  const [filteredStocks, setFilteredStocks] = useState([]);
+  const [formInput, setFormInput] = useState('');
 
   const fetchStocks = async () => {
     try {
@@ -23,11 +25,17 @@ const App = () => {
     fetchStocks()
   }, [])
 
+  const filterStocks = (formInput) => {
+    const filteredStocks = stocks.filter(entry => entry.name.toLowerCase().includes(formInput.toLowerCase()))
+    setFilteredStocks(filteredStocks)
+    setFormInput(formInput)
+  }
+
   return (
     <div className="app">
-      <Header />
+      <Header filterStocks={filterStocks}/>
       <Routes>
-        <Route path="/" element={<StockContainer stocks={stocks} />} />
+        <Route path="/" element={<StockContainer stocks={stocks} filteredStocks={filteredStocks} formInput={formInput} />} />
         <Route path="/:stockId" element={<SelectedPage stocks={stocks} />} />
       </Routes>
     </div>

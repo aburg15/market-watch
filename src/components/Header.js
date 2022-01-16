@@ -2,12 +2,14 @@ import '../css/Header.css';
 import SearchForm from './SearchForm';
 import logo from '../assets/logo.png'
 
-const Header = () => {
+const Header = ({ filterStocks }) => {
   return (
-    <header className="header">
+    <header>
       <img className='logo' src={logo} alt='logo' />
-      <h1>MARKET WATCH</h1>
-      <SearchForm />
+      <div className="search-container">
+        <h1>MARKET WATCH</h1>
+        <SearchForm filterStocks={filterStocks} />
+      </div>
     </header>
   );
 }

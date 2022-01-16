@@ -1,6 +1,6 @@
 import '../css/SearchForm.css';
 
-const SearchForm = () => {
+const SearchForm = ({ filterStocks }) => {
   return (
     <form className="search-form">
       <input
@@ -8,6 +8,7 @@ const SearchForm = () => {
         type='text'
         name='search'
         placeholder='search for a stock'
+        onChange={(e) => filterStocks(e.target.value)}
       />
     </form>
   );
