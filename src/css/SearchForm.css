@@ -1,8 +1,15 @@
-.search-form {
-  display: flex;
-  width: 20%
+.search-bar {
+  width: 30%;
+  min-width:375px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid rgb(223, 209, 6);
+  transition: .2s;
+  background-color: #ffffff;
+  color: white;
+  padding-left: 10px;
 }
 
-.search-bar {
-  width: 100%;
+.search-bar:hover {
+  box-shadow: 0 0 20px rgb(223, 209, 6);
 }
