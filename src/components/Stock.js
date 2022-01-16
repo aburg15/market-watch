@@ -1,6 +1,6 @@
 import '../css/Stock.css';
 
-const Stock = ({ id, name, image, price, market_cap, percent_change }) => {
+const Stock = ({ id, name, image, price, market_cap, percent_change, total_supply }) => {
   return (
     <section className="stock">
       <img className='stock-img' src={image} alt='stock-image' />
