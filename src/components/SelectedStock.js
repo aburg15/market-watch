@@ -4,12 +4,9 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const SelectedStock = ({ stocks, id }) => {
-  console.log(stocks)
   const selectedStock = stocks.find((stock) => {
     return stock.id === id
   })
-
-  console.log(selectedStock)
 
   return (
     <section className="selected-stock-wrapper">
