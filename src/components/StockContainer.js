@@ -2,7 +2,7 @@ import '../css/StockContainer.css';
 import Stock from './Stock';
 import { Link } from 'react-router-dom';
 
-const StockContainer = ({ stocks, filteredStocks }) => {
+const StockContainer = ({ stocks, filteredStocks, formInput }) => {
   const stockCards = stocks.map((stock, index) => {
     return (
       <Link to={'/' + stock.id} key={index} className='stock-link'>
@@ -37,6 +37,16 @@ const StockContainer = ({ stocks, filteredStocks }) => {
     )
   })
 
+  const displayedStocks = () => {
+    if (filteredStockCards.length > 0) {
+      return filteredStockCards
+    } else if (!filteredStockCards.length && formInput.length > 0){
+      return filteredStockCards
+    } else {
+      return stockCards
+    }
+  }
+
   return (
     <div className="stock-container">
       <section className="stock-container-label">
@@ -48,7 +58,7 @@ const StockContainer = ({ stocks, filteredStocks }) => {
           <p>MARKET CAP</p>
         </div>
       </section>
-      {filteredStocks.length ? filteredStockCards : filteredStocks}
+      {displayedStocks()}
     </div>
   );
 }
