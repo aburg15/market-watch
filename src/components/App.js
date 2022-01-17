@@ -25,6 +25,11 @@ const App = () => {
     fetchStocks()
   }, [])
 
+  const resetStockContainer = () => {
+    setFilteredStocks([])
+    setFormInput('')
+  }
+
   const filterStocks = (formInput) => {
     const filteredStocks = stocks.filter(entry => entry.name.toLowerCase().includes(formInput.toLowerCase()))
     setFilteredStocks(filteredStocks)
@@ -36,7 +41,7 @@ const App = () => {
       <Header filterStocks={filterStocks}/>
       <Routes>
         <Route path="/" element={<StockContainer stocks={stocks} filteredStocks={filteredStocks} formInput={formInput} />} />
-        <Route path="/:stockId" element={<SelectedPage stocks={stocks} />} />
+        <Route path="/:stockId" element={<SelectedPage resetStocks={resetStockContainer}/>} />
       </Routes>
     </div>
   );
