@@ -12,3 +12,9 @@
 .search-bar:hover {
   box-shadow: 0 0 20px orange;
 }
+
+@media screen and (max-width: 900px) {
+  .search-bar {
+    min-width: 100px;
+  }
+}

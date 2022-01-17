@@ -2,10 +2,6 @@ a {
   color: black;
 }
 
-a:hover {
-  background-color: #ececec;
-}
-
 .stock-container {
   display: flex;
   flex-direction: column;
@@ -43,4 +39,16 @@ a:hover {
 .stock-label {
   padding-left: 30px;
   padding-right: 30px;
+}
+
+@media screen and (max-width: 900px) {
+  .stock-container {
+    height: fit-content;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .stock-container-label {
+    visibility: hidden;
+  }
 }

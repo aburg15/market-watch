@@ -29,3 +29,14 @@ h1 {
   width: 160px;
   float: left;
 }
+
+@media screen and (max-width: 900px) {
+  .logo {
+    display: none;
+  }
+
+  .search-container,
+  header { 
+    height: 180px;
+  }
+}
