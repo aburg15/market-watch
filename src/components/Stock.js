@@ -1,6 +1,7 @@
 import '../css/Stock.css';
+import PropTypes from 'prop-types';
 
-const Stock = ({ id, name, image, price, market_cap, percent_change }) => {
+const Stock = ({ name, image, price, market_cap, percent_change }) => {
   
   return (
     <section className="stock">
@@ -18,3 +19,11 @@ const Stock = ({ id, name, image, price, market_cap, percent_change }) => {
 }
 
 export default Stock;
+
+Stock.propTypes = {
+  name: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
+  market_cap: PropTypes.number.isRequired,
+  percent_change: PropTypes.number.isRequired
+}

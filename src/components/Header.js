@@ -1,6 +1,7 @@
 import '../css/Header.css';
 import SearchForm from './SearchForm';
 import logo from '../assets/logo.png';
+import PropTypes from 'prop-types';
 import { useLocation, Link } from 'react-router-dom';
 
 const Header = ({ filterStocks }) => {
@@ -18,3 +19,7 @@ const Header = ({ filterStocks }) => {
 }
 
 export default Header;
+
+Header.propTypes = {
+  filterStocks: PropTypes.func.isRequired
+}

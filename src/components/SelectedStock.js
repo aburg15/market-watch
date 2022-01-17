@@ -2,6 +2,7 @@ import '../css/SelectedStock.css';
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { useLocation, Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 const SelectedStock = ({ resetStocks }) => {
   const [selectedStock, setSelectedStock] = useState([])
@@ -42,3 +43,7 @@ const SelectedStock = ({ resetStocks }) => {
 }
 
 export default SelectedStock;
+
+SelectedStock.propTypes = {
+  resetStocks: PropTypes.func.isRequired
+}

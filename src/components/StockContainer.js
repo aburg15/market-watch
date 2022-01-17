@@ -1,6 +1,7 @@
 import '../css/StockContainer.css';
 import Stock from './Stock';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 const StockContainer = ({ stocks, filteredStocks, formInput }) => {
   const stockCards = stocks.map((stock, index) => {
@@ -64,3 +65,9 @@ const StockContainer = ({ stocks, filteredStocks, formInput }) => {
 }
 
 export default StockContainer;
+
+StockContainer.propTypes = {
+  stocks: PropTypes.array.isRequired,
+  filteredStocks: PropTypes.array.isRequired,
+  formInput: PropTypes.string.isRequired,
+}

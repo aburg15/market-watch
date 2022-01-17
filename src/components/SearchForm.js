@@ -1,4 +1,5 @@
 import '../css/SearchForm.css';
+import PropTypes from 'prop-types';
 
 const SearchForm = ({ filterStocks }) => {
   return (
@@ -15,3 +16,7 @@ const SearchForm = ({ filterStocks }) => {
 }
 
 export default SearchForm;
+
+SearchForm.propTypes = {
+  filterStocks: PropTypes.func.isRequired
+}
