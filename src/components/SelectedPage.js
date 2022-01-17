@@ -1,7 +1,7 @@
 import '../css/SelectedPage.css';
 import SelectedStock from './SelectedStock';
-import { useState, useEffect } from 'react';
 import { useParams } from 'react-router';
+import PropTypes from 'prop-types';
 
 
 const SelectedPage = ({ resetStocks }) => {
@@ -10,3 +10,7 @@ const SelectedPage = ({ resetStocks }) => {
 }
 
 export default SelectedPage;
+
+SelectedPage.propTypes = {
+  resetStocks: PropTypes.func.isRequired
+}
