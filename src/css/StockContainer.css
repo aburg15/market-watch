@@ -44,3 +44,10 @@ a:hover {
   padding-left: 30px;
   padding-right: 30px;
 }
+
+@media screen and (max-width: 900px) {
+  .stock-container {
+    display: flex;
+    /* flex-direction: row; */
+  }
+}
