@@ -11,7 +11,7 @@ const Stock = ({ name, image, price, market_cap, percent_change }) => {
           <h2 className='stock-title'>{name}</h2>
         </div>
         <p className='stock-price'>${price.toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</p>
-        <p>{percent_change.toFixed(2) + '%'}</p>
+        <p className={percent_change > 0 ? 'percent-change-green' : 'percent-change-red'}>{percent_change.toFixed(2) + '%'}</p>
         <p>${market_cap.toFixed(0).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</p>
       </div>
     </section>
