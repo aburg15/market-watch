@@ -14,10 +14,22 @@
   margin-right: 50px;
 }
 
-.stock-details {
+.stock-details,
+.percent-change-green,
+.percent-change-red {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
+}
+
+.percent-change-green {
+  color: green;
+  font-weight: bold;
+}
+
+.percent-change-red {
+  color: red;
+  font-weight: bold;
 }
 
 .stock-title, p {

@@ -7,7 +7,7 @@ const StockContainer = ({ stocks, filteredStocks, formInput }) => {
   const stockCards = stocks.map((stock, index) => {
     return (
       <Link to={'/' + stock.id} key={index} className='stock-link'>
-        <Stock 
+        <Stock
           id={stock.id}
           name={stock.name}
           image={stock.image}
@@ -24,7 +24,7 @@ const StockContainer = ({ stocks, filteredStocks, formInput }) => {
   const filteredStockCards = filteredStocks.map((stock, index) => {
     return (
       <Link to={'/' + stock.id} key={index} className='stock-link'>
-        <Stock 
+        <Stock
           id={stock.id}
           name={stock.name}
           image={stock.image}
@@ -33,7 +33,7 @@ const StockContainer = ({ stocks, filteredStocks, formInput }) => {
           percent_change={stock.price_change_percentage_24h}
           total_supply={stock.total_supply}
           key={index}
-          />
+        />
       </Link>
     )
   })
@@ -41,7 +41,7 @@ const StockContainer = ({ stocks, filteredStocks, formInput }) => {
   const displayedStocks = () => {
     if (filteredStockCards.length > 0) {
       return filteredStockCards
-    } else if (!filteredStockCards.length && formInput.length > 0){
+    } else if (!filteredStockCards.length && formInput.length > 0) {
       return filteredStockCards
     } else {
       return stockCards
@@ -51,12 +51,12 @@ const StockContainer = ({ stocks, filteredStocks, formInput }) => {
   return (
     <div className="stock-container">
       <section className="stock-container-label">
-        <img className="stock-img-label" src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png?154703357" /> 
+        <img className="stock-img-label" src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png?154703357" />
         <div className='stock-label-details'>
-          <p>STOCK</p>
-          <p>CURRENT PRICE</p>
-          <p>24 HR % CHANGE</p>
-          <p>MARKET CAP</p>
+          <p className="stock-label">STOCK</p>
+          <p className="stock-label">CURRENT PRICE</p>
+          <p className="stock-label">24 HR % CHANGE</p>
+          <p className="stock-label">MARKET CAP</p>
         </div>
       </section>
       {displayedStocks()}
