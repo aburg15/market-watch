@@ -1,9 +1,9 @@
 import '../css/SelectedStock.css';
-import React, { Component } from 'react';
+import React from 'react';
 import { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 
-const SelectedStock = ({ stocks, id }) => {
+const SelectedStock = () => {
 
   const [selectedStock, setSelectedStock] = useState([])
   const [selectedStockImg, setSelectedStockImg] = useState([])
@@ -22,17 +22,23 @@ const SelectedStock = ({ stocks, id }) => {
   }, [])
 
   return (
-    <section className="selected-stock-wrapper">
-      <main className="selected-stock">
-        <div>
-          <img className="selected-stock-img" src={selectedStockImg.large} />
-        </div>
-        <div className='selected-stock-details'>
-          <h2>{selectedStock.name}</h2>
-          <div dangerouslySetInnerHTML={{__html: selectedStockDescription.en}} />
-        </div>
-      </main>
-    </section>
+    <React.Fragment>
+      {selectedStock.name &&
+      <section className="selected-stock-wrapper">
+        <main className="selected-stock">
+          <div>
+            <img className="selected-stock-img" src={selectedStockImg.large} />
+          </div>
+          <div className='selected-stock-details'>
+            <h2>{selectedStock.name}</h2>
+            {selectedStock.description.en ? <div dangerouslySetInnerHTML={{__html: selectedStockDescription.en}} /> : <p>No description provided.</p>}
+            <Link to="/">
+              <button className='return-button'>Return</button>
+            </Link>
+          </div>
+        </main>
+      </section>}
+    </React.Fragment>
   );
 }
 

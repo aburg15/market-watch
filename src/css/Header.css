@@ -1,10 +1,9 @@
 header {
-  background-color: gray;
+  background-color: #e5e5e5;
   color: white;
   min-height: 18vh;
   display: flex;
   padding: 1em;
-  border: 2px solid green;
 }
 
 .search-container {
@@ -14,6 +13,11 @@ header {
 
 h1 {
   font-size: 3em;
+  color: #14213d;
+}
+
+.header-link {
+  text-decoration: none;
 }
 
 .logo {
