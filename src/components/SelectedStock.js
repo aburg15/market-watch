@@ -3,8 +3,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 
-const SelectedStock = () => {
-
+const SelectedStock = ({ resetStocks }) => {
   const [selectedStock, setSelectedStock] = useState([])
   const [selectedStockImg, setSelectedStockImg] = useState([])
   const [selectedStockDescription, setSelectedStockDescription] = useState('')
@@ -33,7 +32,7 @@ const SelectedStock = () => {
             <h2>{selectedStock.name}</h2>
             {selectedStock.description.en ? <div dangerouslySetInnerHTML={{__html: selectedStockDescription.en}} /> : <p>No description provided.</p>}
             <Link to="/">
-              <button className='return-button'>Return</button>
+              <button className='return-button' onClick={() => resetStocks()}>Return</button>
             </Link>
           </div>
         </main>
