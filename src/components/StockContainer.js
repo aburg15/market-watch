@@ -55,8 +55,8 @@ const StockContainer = ({ stocks, filteredStocks, formInput }) => {
         <div className='stock-label-details'>
           <p className="stock-label">STOCK</p>
           <p className="stock-label">CURRENT PRICE</p>
-          <p className="stock-label">24 HR % CHANGE</p>
-          <p className="stock-label">MARKET CAP</p>
+          <p className="stock-label label-percent">24 HR % CHANGE</p>
+          <p className="stock-label label-market">MARKET CAP</p>
         </div>
       </section>
       {displayedStocks()}

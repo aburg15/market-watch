@@ -6,6 +6,10 @@
   height: 90px; 
 }
 
+.stock:hover {
+  background-color: #ececec;
+}
+
 .stock-img {
   display: flex;
   justify-content: center;
@@ -36,4 +40,20 @@
   display: flex;
   width: 200px;
   align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+  .percent-change-red,
+  .percent-change-green,
+  .market-cap {
+    visibility: hidden;
+  }
+
+  .stock {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 400px;
+  }
 }
