@@ -4,6 +4,7 @@ header {
   min-height: 18vh;
   display: flex;
   padding: 1em;
+  width: 100%;
 }
 
 .search-container {

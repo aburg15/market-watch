@@ -46,4 +46,12 @@ a:hover {
     justify-content: center;
     align-items: center;
   }
+
+  .selected-stock-img {
+    width: 150px;
+  }
+
+  .selected-stock-details {
+    width: 80%;
+  }
 }
