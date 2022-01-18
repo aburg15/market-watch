@@ -150,6 +150,10 @@ input:checked + .slider:before {
     align-items: center;
     width: 100;
   }
+  
+  .toggle-section {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -160,9 +164,5 @@ input:checked + .slider:before {
   .search-container,
   header { 
     height: 180px;
-  }
-
-  .toggle-section {
-    display: none;
   }
 }

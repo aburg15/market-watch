@@ -131,18 +131,29 @@ This project is deployed [here](https://aburg15.github.io/market-watch/) on GitH
 
 Scroll through the main page to view all stocks in the database. To find a specific stock, use the search bar in the header. Click on a stock to view its details. 
 
-<details>
 <summary>Main Page</summary>
-<br>
 <img src='./src/assets/main-page.png' />
-</details>
-
-<details>
-<summary>Specific Stock Page</summary>
 <br>
+<br>
+<summary>Specific Stock Page</summary>
 <img src='./src/assets/selected-page.png' />
+<br>
+<br>
+<summary>Dark Mode</summary>
+<img src='./src/assets/dark-mode.png' />
+<br>
+<br>
+<summary>Error Handling</summary>
+<img src='./src/assets/failed-to-fetch.png' />
+<img src='./src/assets/invalid-url.png' />
+<br>
+<br>
+<summary>Responsive Design</summary>
+ <table>
+ <td><img width="296" alt="Screen Shot 2022-01-12 at 12 12 34 PM" src="./src/assets/responsive(1).png"></td>
+ <td><img width="303" alt="Screen Shot 2022-01-12 at 12 12 34 PM" src="./src/assets/responsive(2).png"></td>
+</table>
 
-</details>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
