@@ -26,7 +26,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/aburg15/market-watch">
-    <img src="./src/assets/logo.png" alt="Logo" width="125" height="125">
+    <img src="./src/assets/logo.png" alt="Logo" width="150" height="125">
   </a>
 
 <h3 align="center">Market Watch</h3>
