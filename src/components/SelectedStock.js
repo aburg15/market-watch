@@ -3,6 +3,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import ErrorPage from './ErrorPage';
 
 const SelectedStock = ({ resetStocks }) => {
   const [selectedStock, setSelectedStock] = useState([])

@@ -2,8 +2,9 @@ import '../css/StockContainer.css';
 import Stock from './Stock';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import ErrorPage from './ErrorPage';
 
-const StockContainer = ({ stocks, filteredStocks, formInput }) => {
+const StockContainer = ({ stocks, filteredStocks, formInput, error }) => {
   const stockCards = stocks.map((stock, index) => {
     return (
       <Link to={'/' + stock.id} key={index} className='stock-link'>
@@ -50,15 +51,16 @@ const StockContainer = ({ stocks, filteredStocks, formInput }) => {
 
   return (
     <div className="stock-container">
+      {error ? <ErrorPage error={error} /> :
       <section className="stock-container-label">
         <img className="stock-img-label" src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png?154703357" />
         <div className='stock-label-details'>
-          <p className="stock-label">STOCK</p>
+          <p className="stock-label-name">STOCK</p>
           <p className="stock-label">CURRENT PRICE</p>
           <p className="stock-label label-percent">24 HR % CHANGE</p>
           <p className="stock-label label-market">MARKET CAP</p>
         </div>
-      </section>
+      </section>}
       {displayedStocks()}
     </div>
   );

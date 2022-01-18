@@ -4,12 +4,14 @@ import { useState, useEffect } from 'react';
 import Header from './Header';
 import StockContainer from './StockContainer';
 import SelectedPage from './SelectedPage';
+import ErrorPage from './ErrorPage';
 
 const App = () => {
 
   const [stocks, setStocks] = useState([]);
   const [filteredStocks, setFilteredStocks] = useState([]);
   const [formInput, setFormInput] = useState('');
+  const [error, setError] = useState(null)
 
   const fetchStocks = async () => {
     try {
@@ -17,7 +19,7 @@ const App = () => {
       const data = await stockData.json()
       setStocks(data)
     } catch (err) {
-      console.log(err)
+      setError(err)
     }
   }
 
@@ -40,8 +42,9 @@ const App = () => {
     <div className="app">
       <Header filterStocks={filterStocks}/>
       <Routes>
-        <Route path="/" element={<StockContainer stocks={stocks} filteredStocks={filteredStocks} formInput={formInput} />} />
-        <Route path="/:stockId" element={<SelectedPage resetStocks={resetStockContainer}/>} />
+        <Route path="/" element={<StockContainer stocks={stocks} filteredStocks={filteredStocks} formInput={formInput} error={error}/>} />
+        <Route path="/:stockId" element={<SelectedPage resetStocks={resetStockContainer} />} />
+        <Route path="/:stockId/*" element={<ErrorPage error={error}/>} />
       </Routes>
     </div>
   );
