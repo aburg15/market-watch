@@ -56,6 +56,19 @@
   margin-right: 50px;
 }
 
+.toggle-label,
+.toggle-label-dark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  margin-bottom: 3px;
+}
+
+.toggle-label-dark {
+  color: white;
+}
+
 .switch {
   position: relative;
   display: inline-block;
@@ -147,5 +160,9 @@ input:checked + .slider:before {
   .search-container,
   header { 
     height: 180px;
+  }
+
+  .toggle-section {
+    display: none;
   }
 }

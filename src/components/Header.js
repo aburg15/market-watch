@@ -15,7 +15,8 @@ const Header = ({ filterStocks, themeToggler, theme }) => {
         {useLocation().pathname === '/' && <SearchForm filterStocks={filterStocks} />}
       </div>
       <div className='toggle'>
-        <div className='toggle-section'>  
+        <div className='toggle-section'>
+          <p className={theme === 'light' ? 'toggle-label' : 'toggle-label-dark'}>Dark Mode</p>
           <label className="switch">
             <input type="checkbox" onChange={() => themeToggler()} />
             <span className="slider round"></span>

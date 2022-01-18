@@ -42,7 +42,7 @@ const StockContainer = ({ stocks, filteredStocks, formInput, error, theme }) => 
   })
 
   const displayedStocks = () => {
-    if (filteredStockCards.length > 0) {
+    if (filteredStockCards.length) {
       return filteredStockCards
     } else if (!filteredStockCards.length && formInput.length > 0) {
       return filteredStockCards
