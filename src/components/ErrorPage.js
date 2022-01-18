@@ -5,7 +5,6 @@ import propTypes from 'prop-types';
 import '../css/ErrorPage.css';
 
 const ErrorPage = ({ error }) => {
-  console.log('hi')
 
   const checkError = error ? <h2>{error.message} games. Try again later!</h2> :
     <React.Fragment>
