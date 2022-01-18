@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import ErrorPage from './ErrorPage';
 
-const StockContainer = ({ stocks, filteredStocks, formInput, error }) => {
+const StockContainer = ({ stocks, filteredStocks, formInput, error, theme }) => {
   const stockCards = stocks.map((stock, index) => {
     return (
-      <Link to={'/' + stock.id} key={index} className='stock-link'>
+      <Link to={'/' + stock.id} key={index} className={theme === 'light' ? 'stock-link' : 'a-dark'}>
         <Stock
           id={stock.id}
           name={stock.name}
@@ -16,6 +16,7 @@ const StockContainer = ({ stocks, filteredStocks, formInput, error }) => {
           market_cap={stock.market_cap}
           percent_change={stock.price_change_percentage_24h}
           total_supply={stock.total_supply}
+          theme={theme}
           key={index}
         />
       </Link>
@@ -33,6 +34,7 @@ const StockContainer = ({ stocks, filteredStocks, formInput, error }) => {
           market_cap={stock.market_cap}
           percent_change={stock.price_change_percentage_24h}
           total_supply={stock.total_supply}
+          theme={theme}
           key={index}
         />
       </Link>

@@ -20,10 +20,15 @@
 
 .stock-details,
 .percent-change-green,
-.percent-change-red {
+.percent-change-red,
+.stock-details-dark {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
+}
+
+.stock-details-dark {
+  color: white;
 }
 
 .percent-change-green {
