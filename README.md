@@ -131,7 +131,7 @@ This project is deployed [here](https://aburg15.github.io/market-watch/) on GitH
 
 Scroll through the main page to view all stocks in the database. To find a specific stock, use the search bar in the header. Click on a stock to view its details. 
 
-### Main Page
+#### Main Page
 <img src='./src/assets/main-page.png' />
 <br>
 <br>
