@@ -5,7 +5,7 @@ import '../css/ErrorPage.css';
 
 const ErrorPage = ({ error }) => {
 
-  const checkError = error ? <h2>{error.message} games. Try again later!</h2> :
+  const checkError = error ? <h2>{error.message} stocks. Try again later!</h2> :
     <React.Fragment>
       <h2>Invalid URL</h2>
       <Link className='error-btn' to='/'>Go Home!</Link>
