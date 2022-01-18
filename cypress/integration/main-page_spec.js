@@ -45,7 +45,7 @@ describe('main page', () => {
   })
 
   it('should filter stocks with search', () => {
-    cy.get('input')
+    cy.get('.search-bar')
       .type('Ethereum');
     cy.contains('Bitcoin')
       .should('not.exist');
@@ -54,7 +54,7 @@ describe('main page', () => {
   })
 
   it('should display no stocks if search does not match any stocks', () => {
-    cy.get('input')
+    cy.get('.search-bar')
       .type('zzzzzz');
     cy.get('.stock')
       .should('have.length', 0)
