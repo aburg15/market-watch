@@ -165,7 +165,7 @@ Scroll through the main page to view all stocks in the database. To find a speci
 
 ### Wins
 
-- The biggest win was building the app and completing the functionality using a non-Turing provided API.   
+- The biggest win was building the app and completing the functionality using a non-Turing provided API.  API's that have not been vetted may appear to be easier to work with than they really are.   
 - Successfully implementing Cypress, Router and React in a non-group project.
 - Filtering the stock data that was fetched from an external API via the use of a search bar.
 
