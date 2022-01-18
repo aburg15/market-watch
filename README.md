@@ -146,7 +146,7 @@ Scroll through the main page to view all stocks in the database. To find a speci
 <br>
 <br>
 
-#### Error Handling
+### Error Handling
 <img src='./src/assets/failed-to-fetch.png' />
 <img src='./src/assets/invalid-url.png' />
 <br>
