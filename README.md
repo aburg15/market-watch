@@ -156,8 +156,13 @@ I was able to accomplish a lot with this project. However, there a few things I 
 <!-- CONTACT -->
 ## Contributors
 
-**Adam Burgess**: [GitHub](https://github.com/aburg15) | [LinkedIn](https://www.linkedin.com/in/burgess-adam/) | [aburg1515@gmail.com](mailto:aburg1515@gmail.com)
-
+<table>
+    <tr>
+        <td> Adam Burgess <a href="https://github.com/aburg15">GH</td>
+    </tr>
+ <td><img src="https://avatars.githubusercontent.com/u/77649894?v=4" alt="Adam Burgess"
+ width="150" height="auto" /></td>
+</table>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
