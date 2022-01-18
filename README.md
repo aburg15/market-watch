@@ -105,7 +105,7 @@ This project was crafted as part of the curriculum for [Turing School of Softwar
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This project is deployed [here](https://.github.io/market-watch/) on GitHub Pages, but if you'd like to interact with it on your local machine, follow the instructions below.
+This project is deployed [here](https://aburg15.github.io/market-watch/) on GitHub Pages, but if you'd like to interact with it on your local machine, follow the instructions below.
 
 ### Installation
 
