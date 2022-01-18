@@ -2,7 +2,7 @@ import '../css/Stock.css';
 import PropTypes from 'prop-types';
 
 const Stock = ({ name, image, price, market_cap, percent_change }) => {
-  
+
   return (
     <section className="stock">
       <img className='stock-img' src={image} alt='stock-image' />

@@ -40,11 +40,11 @@ const App = () => {
 
   return (
     <div className="app">
-      <Header filterStocks={filterStocks}/>
+      <Header filterStocks={filterStocks} />
       <Routes>
-        <Route path="/" element={<StockContainer stocks={stocks} filteredStocks={filteredStocks} formInput={formInput} error={error}/>} />
+        <Route path="/" element={<StockContainer stocks={stocks} filteredStocks={filteredStocks} formInput={formInput} error={error} />} />
         <Route path="/:stockId" element={<SelectedPage resetStocks={resetStockContainer} />} />
-        <Route path="/:stockId/*" element={<ErrorPage error={error}/>} />
+        <Route path="/:stockId/*" element={<ErrorPage error={error} />} />
       </Routes>
     </div>
   );

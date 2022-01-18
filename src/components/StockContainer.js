@@ -52,15 +52,15 @@ const StockContainer = ({ stocks, filteredStocks, formInput, error }) => {
   return (
     <div className="stock-container">
       {error ? <ErrorPage error={error} /> :
-      <section className="stock-container-label">
-        <img className="stock-img-label" src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png?154703357" />
-        <div className='stock-label-details'>
-          <p className="stock-label-name">STOCK</p>
-          <p className="stock-label">CURRENT PRICE</p>
-          <p className="stock-label label-percent">24 HR % CHANGE</p>
-          <p className="stock-label label-market">MARKET CAP</p>
-        </div>
-      </section>}
+        <section className="stock-container-label">
+          <img className="stock-img-label" src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png?154703357" />
+          <div className='stock-label-details'>
+            <p className="stock-label-name">STOCK</p>
+            <p className="stock-label">CURRENT PRICE</p>
+            <p className="stock-label label-percent">24 HR % CHANGE</p>
+            <p className="stock-label label-market">MARKET CAP</p>
+          </div>
+        </section>}
       {displayedStocks()}
     </div>
   );
