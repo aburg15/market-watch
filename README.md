@@ -146,6 +146,19 @@ Scroll through the main page to view all stocks in the database. To find a speci
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+## Wins And Challenges 
+
+### Wins
+
+- The biggest win was building the app and completing the functionality using a non-Turing provided API.   
+- Successfully implementing Cypress, Router and React in a non-group project.
+- Filtering the stock data that was fetched from an external API via the use of a search bar.
+
+### Challenges 
+
+- Using a non-Turing provided API endpoint proved to be challenging.  A big lesson learned was to test all of the object properties from the API before starting the project. 
+- Having to build out a React component architecture for the first time in a non-group setting. 
+
 
 ## Future Updates 
 I was able to accomplish a lot with this project. However, there a few things I would like to improve on in future iterations:
