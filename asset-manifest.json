@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/market-watch/static/css/main.270e3c3f.css",
-    "main.js": "/market-watch/static/js/main.7441e58e.js",
+    "main.css": "/market-watch/static/css/main.1d76fe4b.css",
+    "main.js": "/market-watch/static/js/main.9f941079.js",
     "index.html": "/market-watch/index.html",
-    "main.270e3c3f.css.map": "/market-watch/static/css/main.270e3c3f.css.map",
-    "main.7441e58e.js.map": "/market-watch/static/js/main.7441e58e.js.map"
+    "main.1d76fe4b.css.map": "/market-watch/static/css/main.1d76fe4b.css.map",
+    "main.9f941079.js.map": "/market-watch/static/js/main.9f941079.js.map"
   },
   "entrypoints": [
-    "static/css/main.270e3c3f.css",
-    "static/js/main.7441e58e.js"
+    "static/css/main.1d76fe4b.css",
+    "static/js/main.9f941079.js"
   ]
 }
