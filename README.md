@@ -135,20 +135,24 @@ Scroll through the main page to view all stocks in the database. To find a speci
 <img src='./src/assets/main-page.png' />
 <br>
 <br>
+
 ### Specific Stock Page
 <img src='./src/assets/selected-page.png' />
 <br>
 <br>
+
 ### Dark Mode
 <img src='./src/assets/dark-mode.png' />
 <br>
 <br>
+
 #### Error Handling
 <img src='./src/assets/failed-to-fetch.png' />
 <img src='./src/assets/invalid-url.png' />
 <br>
 <br>
-#### Responsive Design
+
+### Responsive Design
  <table>
  <td><img width="296" alt="Screen Shot 2022-01-12 at 12 12 34 PM" src="./src/assets/responsive(1).png"></td>
  <td><img width="303" alt="Screen Shot 2022-01-12 at 12 12 34 PM" src="./src/assets/responsive(2).png"></td>
