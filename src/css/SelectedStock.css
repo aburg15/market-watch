@@ -13,6 +13,10 @@
   width: 60%;
 }
 
+.dark-theme a { 
+  color: white; 
+}
+
 .selected-stock-img {
   width: 300px;
 }
@@ -28,10 +32,6 @@
   margin-top: 15px;
   padding: 4px 10px;
   font-weight: bold;
-}
-
-a:hover {
-  background-color: white;
 }
 
 @media screen and (max-width: 900px) {

@@ -4,9 +4,9 @@ import { useParams } from 'react-router';
 import PropTypes from 'prop-types';
 
 
-const SelectedPage = ({ resetStocks }) => {
+const SelectedPage = ({ resetStocks, theme }) => {
   const id = useParams().stockId;
-  return <SelectedStock id={id} resetStocks={resetStocks} />
+  return <SelectedStock id={id} resetStocks={resetStocks} theme={theme}/>
 }
 
 export default SelectedPage;

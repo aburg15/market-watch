@@ -1,3 +1,7 @@
+a {
+  text-decoration: none;
+}
+
 .stock {
   display: flex;
   align-items: center;
@@ -20,10 +24,19 @@
 
 .stock-details,
 .percent-change-green,
-.percent-change-red {
+.percent-change-red,
+.stock-details-dark {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
+}
+
+.stock-details-dark {
+  color: white;
+}
+
+.stock-details-dark:hover {
+  color: black;
 }
 
 .percent-change-green {

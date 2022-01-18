@@ -1,7 +1,6 @@
 import React from 'react';
 import { BiMessageSquareError } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
-import propTypes from 'prop-types';
 import '../css/ErrorPage.css';
 
 const ErrorPage = ({ error }) => {

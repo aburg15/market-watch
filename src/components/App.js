@@ -5,6 +5,12 @@ import Header from './Header';
 import StockContainer from './StockContainer';
 import SelectedPage from './SelectedPage';
 import ErrorPage from './ErrorPage';
+import { lightTheme, darkTheme, GlobalStyles } from '../themes';
+import styled, { ThemeProvider } from "styled-components"
+
+export const StyledApp = styled.div`
+color: ${(props) => props.theme.fontColor}
+`;
 
 const App = () => {
 
@@ -12,6 +18,7 @@ const App = () => {
   const [filteredStocks, setFilteredStocks] = useState([]);
   const [formInput, setFormInput] = useState('');
   const [error, setError] = useState(null)
+  const [theme, setTheme] = useState("light");
 
   const fetchStocks = async () => {
     try {
@@ -27,6 +34,10 @@ const App = () => {
     fetchStocks()
   }, [])
 
+  const themeToggler = () => {
+    theme === "light" ? setTheme("dark") : setTheme("light")
+  }
+
   const resetStockContainer = () => {
     setFilteredStocks([])
     setFormInput('')
@@ -39,14 +50,19 @@ const App = () => {
   }
 
   return (
-    <div className="app">
-      <Header filterStocks={filterStocks}/>
-      <Routes>
-        <Route path="/" element={<StockContainer stocks={stocks} filteredStocks={filteredStocks} formInput={formInput} error={error}/>} />
-        <Route path="/:stockId" element={<SelectedPage resetStocks={resetStockContainer} />} />
-        <Route path="/:stockId/*" element={<ErrorPage error={error}/>} />
-      </Routes>
-    </div>
+    <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+      <GlobalStyles />
+      <div className="app">
+        <StyledApp>
+          <Header filterStocks={filterStocks} theme={theme} themeToggler={themeToggler} />
+          <Routes>
+            <Route path="/" element={<StockContainer stocks={stocks} filteredStocks={filteredStocks} formInput={formInput} error={error} theme={theme} />} />
+            <Route path="/:stockId" element={<SelectedPage resetStocks={resetStockContainer} theme={theme} />} />
+            <Route path="/:stockId/*" element={<ErrorPage error={error} />} />
+          </Routes>
+        </StyledApp>
+      </div>
+    </ThemeProvider >
   );
 }
 
