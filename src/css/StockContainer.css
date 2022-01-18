@@ -12,7 +12,7 @@ a {
 .stock-container-label {
   display: flex;
   border-bottom: 2px solid lightgray;
-  width: 800px;
+  width: 900px;
   height: 50px; 
   justify-content: space-evenly;
 }
@@ -39,6 +39,15 @@ a {
 .stock-label {
   padding-left: 30px;
   padding-right: 30px;
+}
+
+.stock-label-name {
+  text-align: left;
+  margin-right: 40px;
+}
+
+.label-percent {
+  margin-right: 10px;
 }
 
 @media screen and (max-width: 900px) {
