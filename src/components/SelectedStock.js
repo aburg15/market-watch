@@ -22,7 +22,6 @@ const SelectedStock = ({ resetStocks, theme }) => {
     fetchData(`https://api.coingecko.com/api/v3/coins/${locationId}`)
   }, [])
 
-  console.log(theme)
   return (
     <React.Fragment>
       {selectedStock.name &&

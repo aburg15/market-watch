@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const Stock = ({ name, image, price, market_cap, percent_change, theme }) => {
 
   return (
-    <section className="stock">
+    <section className='stock'>
       <img className='stock-img' src={image} alt='stock-image' />
       <div className={theme === 'light' ? 'stock-details' : 'stock-details-dark'}>
         <div>
