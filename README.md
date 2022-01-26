@@ -32,7 +32,7 @@
 <h3 align="center">Market Watch</h3>
 
   <p align="center">
-    A UI for viewing cyrptocurrency stock prices, market cap and daily % change.
+    A UI for viewing cryptocurrency stock prices, market cap and daily % change.
     <br />
     <a href="https://aburg15.github.io/market-watch/"><strong>View demo</strong></a>
     <br />
